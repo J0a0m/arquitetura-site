@@ -73,7 +73,6 @@ function ProjetoDetalhes() {
 
       </div>
 
-
       <div className="project-detail-image">
 
         <img
@@ -82,7 +81,6 @@ function ProjetoDetalhes() {
         />
 
       </div>
-
 
       <div className="project-detail-content">
 
@@ -103,7 +101,6 @@ function ProjetoDetalhes() {
         </p>
 
       </div>
-
 
       <div className="project-detail-gallery">
 
@@ -126,7 +123,6 @@ function ProjetoDetalhes() {
         </div>
 
       </div>
-
 
       <Link to="/projetos" className="back-link">
         ← Voltar para o catálogo

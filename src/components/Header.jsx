@@ -6,14 +6,14 @@ function Header() {
       <div className="header-container">
 
         <Link to="/" className="logo">
-          Berk
+          BERK
         </Link>
 
         <nav className="navigation">
           <Link to="/">Início</Link>
-          <Link to="/projetos">Projetos</Link>
-          <Link to="/sobre">Sobre</Link>
-          <Link to="/contato">Contato</Link>
+          <Link to="/projetos">Dragões</Link>
+          <Link to="/sobre">Sobre o Livro</Link>
+          <Link to="/contato">Novo Registro</Link>
         </nav>
 
       </div>

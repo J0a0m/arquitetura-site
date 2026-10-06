@@ -5,13 +5,14 @@ function Contato() {
       <div className="page-header">
 
         <span className="section-label">
-          CONTATO
+          NOVO REGISTRO
         </span>
 
-        <h1>Vamos conversar?</h1>
+        <h1>Encontrou um dragão?</h1>
 
         <p>
-          Entre em contato para falar sobre seu próximo projeto.
+          Envie informações sobre uma nova criatura
+          para contribuir com o Livro dos Dragões.
         </p>
 
       </div>
@@ -21,18 +22,21 @@ function Contato() {
 
         <div className="contact-information">
 
-          <h2>Informações</h2>
+          <h2>Como contribuir</h2>
 
           <p>
-            São Paulo, Brasil
+            Encontrou uma espécie que ainda não está
+            registrada no catálogo?
           </p>
 
           <p>
-            joao.pagano@aluno.cps.sp.gov.br
+            Envie seu nome, e-mail e conte tudo o que
+            conseguiu observar sobre o dragão.
           </p>
 
           <p>
-            +55 (11) 94702-4469
+            Seus registros podem ajudar a ampliar o
+            conhecimento sobre as criaturas conhecidas.
           </p>
 
         </div>
@@ -61,17 +65,17 @@ function Contato() {
 
 
           <label>
-            Mensagem
+            Registro do dragão
 
             <textarea
               rows="6"
-              placeholder="Digite sua mensagem"
+              placeholder="Descreva o dragão encontrado, suas características, localização e comportamento"
             />
           </label>
 
 
           <button type="submit" className="button">
-            Enviar mensagem
+            Enviar registro
           </button>
 
         </form>

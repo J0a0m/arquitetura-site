@@ -5,14 +5,14 @@ function Sobre() {
       <div className="page-header">
 
         <span className="section-label">
-          NOSSO ESCRITÓRIO
+          SOBRE O LIVRO
         </span>
 
-        <h1>Sobre</h1>
+        <h1>O Livro dos Dragões</h1>
 
         <p>
-          Conheça nossa forma de pensar e desenvolver
-          projetos arquitetônicos.
+          Conheça a história por trás dos registros e
+          o conhecimento reunido sobre as criaturas de Berk.
         </p>
 
       </div>
@@ -21,32 +21,59 @@ function Sobre() {
       <div className="about-content">
 
         <div className="about-image">
-          ARQUITETURA
+         <img
+                className="about-image"
+                src="/images/livro_dos_dragoes.png"
+                alt="Pesadelo Monstruoso"
+        />
         </div>
 
         <div className="about-text">
 
           <span className="section-label">
-            NOSSA VISÃO
+            NOSSA MISSÃO
           </span>
 
           <h2>
-            Criar espaços que façam sentido.
+            Conhecer para compreender.
           </h2>
 
           <p>
-            Acreditamos que a arquitetura deve ir além
-            da estética. Cada projeto deve considerar
-            as pessoas, o contexto e a maneira como
-            os espaços serão utilizados.
+            O Livro dos Dragões reúne informações sobre
+            diferentes espécies conhecidas pelos habitantes
+            de Berk. Cada registro apresenta características,
+            habilidades, comportamentos e outros detalhes
+            importantes sobre essas criaturas.
           </p>
 
           <p>
-            Nosso trabalho busca equilibrar funcionalidade,
-            identidade e inovação em cada projeto.
+            O objetivo deste catálogo é organizar esse
+            conhecimento de forma simples e acessível,
+            permitindo que cada espécie seja conhecida
+            e compreendida além de sua aparência.
           </p>
 
         </div>
+
+      </div>
+
+
+      <div className="about-block">
+
+        <span className="section-label">
+          REGISTROS DE BERK
+        </span>
+
+        <h2>
+          Um catálogo em constante descoberta.
+        </h2>
+
+        <p>
+          Novas espécies podem ser encontradas durante as
+          explorações pelas ilhas. Por isso, o Livro dos
+          Dragões permanece aberto para novos registros,
+          descobertas e informações sobre essas criaturas.
+        </p>
 
       </div>
 

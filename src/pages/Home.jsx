@@ -43,6 +43,7 @@ function Home() {
       <section className="about-preview">
 
         <div>
+
           <span className="section-label">
             SOBRE O LIVRO
           </span>
@@ -50,6 +51,7 @@ function Home() {
           <h2>
             Conhecimento sobre as criaturas de Berk.
           </h2>
+
         </div>
 
         <p>
@@ -66,6 +68,7 @@ function Home() {
         <div className="section-heading">
 
           <div>
+
             <span className="section-label">
               DRAGÕES CATALOGADOS
             </span>
@@ -73,6 +76,7 @@ function Home() {
             <h2>
               Espécies registradas
             </h2>
+
           </div>
 
           <Link to="/projetos" className="text-link">
@@ -85,59 +89,89 @@ function Home() {
         <div className="project-grid">
 
           <article className="project-card">
+
             <div className="project-image">
+
               <img
-                className="image-placeholder"
-                 src="/images/furia_da_noite.png"
-                 alt="Fúria da Noite"
+                className="dragon-image"
+                src="/images/furia_da_noite.png"
+                alt="Fúria da Noite"
               />
+
             </div>
 
             <div className="project-info">
+
               <span>01</span>
-              <h3>Fúria da Noite</h3>
+
+              <h3>
+                Fúria da Noite
+              </h3>
+
               <p>
                 Uma das espécies mais raras e velozes conhecidas.
               </p>
+
             </div>
+
           </article>
 
 
           <article className="project-card">
+
             <div className="project-image">
-               <img
-                className="image-placeholder"
+
+              <img
+                className="dragon-image"
                 src="/images/nadder_mortal.png"
-                alt="Nadder Moral"
+                alt="Nadder Mortal"
               />
+
             </div>
 
             <div className="project-info">
+
               <span>02</span>
-              <h3>Nadder Mortal</h3>
+
+              <h3>
+                Nadder Mortal
+              </h3>
+
               <p>
                 Dragão ágil conhecido por seus espinhos venenosos.
               </p>
+
             </div>
+
           </article>
 
 
           <article className="project-card">
+
             <div className="project-image">
+
               <img
-                className="image-placeholder"
+                className="dragon-image"
                 src="/images/pesadelo_monstruoso.png"
                 alt="Pesadelo Monstruoso"
               />
+
             </div>
 
             <div className="project-info">
+
               <span>03</span>
-              <h3>Pesadelo Monstruoso</h3>
+
+              <h3>
+                Pesadelo Monstruoso
+              </h3>
+
               <p>
                 Um dragão agressivo conhecido por sua força e capacidade de incendiar o próprio corpo.
               </p>
+
             </div>
+
           </article>
 
         </div>
@@ -148,6 +182,7 @@ function Home() {
       <section className="contact-preview">
 
         <div>
+
           <span className="section-label">
             CONTRIBUA COM O REGISTRO
           </span>
@@ -157,6 +192,7 @@ function Home() {
             <br />
             dragão para catalogar?
           </h2>
+
         </div>
 
         <Link to="/contato" className="button">

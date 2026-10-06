@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #ffffff;
+  color: #222222;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.navigation {
+  display: flex;
+  gap: 35px;
+}
+
+.navigation a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.navigation a:hover {
+  opacity: 0.5;
+}
+
+
+/* GERAL */
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #777777;
+}
+
+.page-header {
+  max-width: 700px;
+  margin-bottom: 90px;
+}
+
+.page-header h1 {
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: 0.95;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.page-header p {
+  max-width: 500px;
+  color: #777777;
+  line-height: 1.8;
+}
+
+
+/* BOTÕES */
+
+.button {
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  background: #222222;
+  color: #ffffff;
+
+  border: none;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #444444;
+}
+
+.text-link {
+  display: inline-block;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border-bottom: 1px solid #222222;
+  padding-bottom: 5px;
+}
+
+
+/* HERO */
+
+.hero {
+  max-width: 1200px;
+  min-height: 700px;
+
+  margin: 0 auto;
+  padding: 80px 30px;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.98;
+  font-weight: 300;
+
+  margin-bottom: 35px;
+}
+
+.hero-content p {
+  max-width: 450px;
+
+  color: #777777;
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+.hero-image {
+  height: 600px;
+  background: #eeeeee;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+
+/* SOBRE */
+
+.about-preview {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 130px 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.about-preview h2 {
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.about-preview p {
+  color: #777777;
+  line-height: 1.9;
+  max-width: 500px;
+}
+
+
+/* PROJETOS */
+
+.projects-preview {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 100px 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 60px;
+}
+
+.section-heading h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-image {
+  height: 400px;
+  background: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.project-info {
+  padding: 20px 0;
+}
+
+.project-info > span {
+  font-size: 10px;
+  color: #999999;
+}
+
+.project-info h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.project-info p {
+  font-size: 13px;
+  color: #777777;
+}
+
+
+/* CONTATO HOME */
+
+.contact-preview {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 130px 30px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contact-preview h2 {
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+
+/* LISTA DE PROJETOS */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.project-list-item {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.project-large-image {
+  height: 550px;
+  background: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.project-list-content > span {
+  color: #999999;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-list-content h2 {
+  margin: 20px 0;
+
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.project-list-content p {
+  color: #777777;
+  line-height: 1.8;
+
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+
+/* DETALHES */
+
+.project-detail {
+  padding-bottom: 120px;
+}
+
+.project-detail-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 30px 60px;
+}
+
+.project-detail-header h1 {
+  font-size: clamp(60px, 10vw, 130px);
+  font-weight: 300;
+  line-height: 0.9;
+}
+
+.project-meta {
+  margin-top: 50px;
+
+  display: flex;
+  gap: 50px;
+
+  font-size: 11px;
+  color: #777777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-detail-image {
+  max-width: 1400px;
+  height: 700px;
+
+  margin: 0 auto;
+
+  background: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+  letter-spacing: 3px;
+}
+
+.project-detail-content {
+  max-width: 1000px;
+  margin: 120px auto;
+
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.project-detail-content h2 {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.project-detail-content p {
+  color: #777777;
+  line-height: 1.9;
+}
+
+.project-detail-gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.detail-image {
+  height: 450px;
+  background: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+}
+
+.back-link {
+  display: block;
+  width: fit-content;
+
+  margin: 80px auto 0;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border-bottom: 1px solid #222222;
+  padding-bottom: 5px;
+}
+
+
+/* SOBRE */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-image {
+  height: 650px;
+  background: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaaaaa;
+  letter-spacing: 3px;
+}
+
+.about-text h2 {
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 35px;
+}
+
+.about-text p {
+  color: #777777;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+
+/* CONTATO */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 100px;
+}
+
+.contact-information h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.contact-information p {
+  color: #777777;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #cccccc;
+
+  padding: 15px 0;
+
+  outline: none;
+
+  font-size: 14px;
+
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #222222;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background: #222222;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 80px 30px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-brand h2 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+.footer h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.footer-contact p {
+  color: #aaaaaa;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444444;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 25px 30px;
+
+  color: #777777;
+
+  font-size: 10px;
+}
+
+
+/* NÃO ENCONTRADO */
+
+.not-found {
+  min-height: 60vh;
+}
+
+.not-found h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  .about-preview {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 450px;
+  }
+
+  .project-list-item {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-large-image {
+    height: 450px;
+  }
+
+  .project-detail-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .header-container {
+    min-height: 70px;
+  }
+
+  .navigation {
+    gap: 12px;
+  }
+
+  .navigation a {
+    font-size: 9px;
+  }
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .section-heading h2 {
+    font-size: 40px;
+  }
+
+  .contact-preview {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .contact-preview h2 {
+    font-size: 42px;
+  }
+
+  .project-detail-image {
+    height: 450px;
+  }
+
+  .project-detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image {
+    height: 350px;
+  }
+}
